@@ -1,76 +1,71 @@
-Voice-Based Sentiment Chatbot
-This project implements a speech-driven sentiment analysis chatbot in Python. It uses voice input to interact with the user, performs sentiment analysis on the spoken text, and responds in natural speech with context-aware empathy.
+# 🎙️ Voice-Based Sentiment Chatbot
 
-Features
-Speech-to-text conversion using Google Speech Recognition
+This project is a speech-driven sentiment analysis chatbot built in Python. It captures voice input from the user, analyzes its sentiment with NLTK’s VADER, and responds in spoken voice with empathy-aware replies.
 
-Sentiment analysis with NLTK's VADER sentiment analyzer
+---
 
-Voice-based conversational replies with pyttsx3
+## ✨ Features
 
-Categorizes emotions into five states:
+- 🗣️ Speech-to-text conversion via Google Speech Recognition  
+- 🧠 Sentiment analysis with NLTK VADER  
+- 🔊 Text-to-speech responses with pyttsx3  
+- 🎭 Emotion categorization:
+  - Happy or excited
+  - Calm or content
+  - Neutral
+  - Sad or disappointed
+  - Angry or frustrated  
+- 💬 Dynamic conversation based on detected emotion  
+- 🧩 Easy to extend and customize
 
-Happy or excited
+---
 
-Calm or content
+## 🛠️ Technologies
 
-Neutral
+- Python 3
+- SpeechRecognition
+- NLTK
+- pyttsx3
+- PyAudio
 
-Sad or disappointed
+---
 
-Angry or frustrated
+## ⚙️ Installation
 
-Dynamic spoken responses tailored to the detected emotional state
+1. Install the required packages:
 
-Easily extensible for advanced conversation logic
+   ```bash
+   pip install SpeechRecognition pyttsx3 nltk pyaudio
+   
 
-Technologies Used
-Python 3
+2. Download the VADER lexicon (for sentiment analysis):
 
-speech_recognition
+   ```python
+   import nltk
+   nltk.download('vader_lexicon');
 
-nltk (VADER sentiment analysis)
+3. Ensure your microphone is connected and accessible.
+   
+---
 
-pyttsx3
+## 🚀 Usage
+1. Save the chatbot code as chatbot.py.
 
-pyaudio
+2. In your terminal, run:
 
-Installation and Setup
-Install the required Python dependencies:
+    ```bash
+    python chatbot.py
+    Speak naturally to the chatbot.
 
-nginx
-Copy
-Edit
-pip install SpeechRecognition pyttsx3 nltk pyaudio
-Download the NLTK VADER lexicon (required for sentiment analysis):
+3. Say “exit”, “quit”, or “stop” to end the conversation.
 
-python
-Copy
-Edit
-import nltk
-nltk.download('vader_lexicon')
-Ensure your microphone is connected and permitted by your operating system.
+---
 
-Save the chatbot code as, for example, chatbot.py.
+## 🌟 Future Enhancements
+Integrate with advanced language models (like GPT)
 
-Run the chatbot:
+Add long-term sentiment storage
 
-nginx
-Copy
-Edit
-python chatbot.py
-Speak naturally to the chatbot. You can say "exit", "quit", or "stop" to end the conversation.
+Provide mental health resources
 
-Project Structure
-Copy
-Edit
-chatbot.py
-README.md
-Future Enhancements
-Integration with advanced large language models such as GPT
-
-Long-term storage of user sentiment history for mental health tracking
-
-Delivery of context-sensitive resources such as guided meditations
-
-Addition of a graphical user interface (GUI) for enhanced usability
+Implement a graphical user interface (GUI)
